@@ -12,23 +12,44 @@
   </head>
   <body>
     <div class="weather-app">
+
      <header>
-      <form>
-        <input type="search" placeholde="Enter a city..." required/>
-        <input type="submit" value="Search"/>
+      <form class="search-form">
+        <input type="search" placeholder="Enter a city..." required id="search-form-input" class="search-form-input"/>
+        <input type="submit" value="Search" class="search-form-button"/>
       </form>
   </header>
   <main>
+    <div class="weather-app-data">
+
     <div>
-    <h1>Miami</h1>
-    <p>Wednesday 62:75, partly cloudy
+    <h1 class="weather-app-city" id="city">Miami</h1>
+    <p class="weather-app-details">Wednesday 62:75, partly cloudy
       <br />
-      Humidity:80%, Wind: 2mph
+      Humidity:<strong>80%</strong>, Wind: <strong>2mph</strong>
     </p>
     </div>
-    <div>⛅ 60°F</div>
+
+    <div class="weather-app-container"></div>
+    <div class="weather-app-icon">⛅</div>
+    <div class="weather-app-temperature">60</div>
+    <div class="weather-app-unit">°F</div>
+
+    </div>
+
     </main>
-    <footer>Coded by<a href="https://github.com/SpectreKitty" target = "_blank">Astry Brana</a>, is open-sourced on <a href="https://github.com/SpectreKitty/weather-project" target = "_blank"> GitHub</a> and hosted on <a href=https://astry-weather-project.netlify.app target = "_blank"> Netlify</a></footer>
+
+    <footer>
+      Coded by 
+      <a href="https://github.com/SpectreKitty" target = "_blank">Astry Brana</a>
+      , is open-sourced on 
+      <a href="https://github.com/SpectreKitty/weather-project" target = "_blank"> GitHub</a>
+       and hosted on 
+       <a href=https://astry-weather-project.netlify.app target = "_blank"> Netlify</a>
+    </footer>
+
   </div>
+
+  <script src="src/app.js"></script>
   </body>
 </html>

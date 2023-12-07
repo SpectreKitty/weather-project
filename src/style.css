@@ -1,6 +1,6 @@
 body {
   background-color: #f9f7fe;
-  font-family: "Silkscreen", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 header {
@@ -58,7 +58,7 @@ main {
 .weather-app-details strong {
   color: #f65282;
 }
-.weather-app-container {
+.weather-app-temperature-container {
   display: flex;
 }
 .weather-app-temperature {

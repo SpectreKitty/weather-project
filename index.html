@@ -11,11 +11,8 @@
     <title>Weather Project</title>
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
-
   <body>
-
     <div class="weather-app">
-
      <header>
       <form class="search-form" id="search-form">
         <input 
@@ -28,11 +25,8 @@
         <input type="submit" value="Search" class="search-form-button"/>
       </form>
   </header>
-
   <main>
-
     <div class="weather-app-data">
-
     <div>
     <h1 class="weather-app-city" id="city"></h1>
     <p class="weather-app-details">
@@ -42,18 +36,26 @@
       Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
     </p>
     </div>
-
     <div class="weather-app-temperature-container">
-
     <div class="weather-app-icon" id="icon"></div>
     <div class="weather-app-temperature" id="temperature"></div>
     <div class="weather-app-unit">°F</div>
-
     </div>
-  
+  </div>
+<div class="weather-forecast">
+    <div class="weather-forecast-day">
+      <div class="col-2">
+        <div class="weather-forecast-date">Tue</div>
+        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max">18°F</span>
+          <span class="weather-forecast-temperature-min">12°F</span>
+        </div>
+        </div>
+      </div>
+  </div>
   </div>
   </main>
-
     <footer>
       Coded by 
       <a href="https://github.com/SpectreKitty" target = "_blank">Astry Brana</a>
@@ -62,7 +64,6 @@
        and hosted on 
        <a href=https://astry-weather-project.netlify.app target = "_blank"> Netlify</a>
     </footer>
-
   <script src="src/app.js"></script>
   </body>
 </html>
